@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1.0em;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* ----- divs ----- */
+
+#wrapper {
+	width: 100%;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	background-color: #c2eb47;
+	background-image: url(../image/left.png), url(../image/right.png);
+	background-position: top left, top right;
+	background-repeat: no-repeat, no-repeat;
+}
+
+#header {
+	width: auto;
+	height: 100px;
+	line-height: 100px;
+	padding: 5px;
+	background-color: #41b90d;
+	border-bottom: #f9de44 15px solid;
+	font-size: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#content {
+	width: auto;
+	height: 100%;
+	margin: 0 250px;
+	padding: 1%;
+	/*background: #ffff00;*/
+	display: block;	
+}
+
+#contentLeft {
+	width: 68%;
+	height: 100%;
+	padding: 1%;
+	float: left;
+	/*background: #0000ff;*/
+}
+
+#contentRight {
+	width: 28%;
+	margin-left: 70%;
+	/*background: #ff0000;*/
+	padding: 1%;
+}
+
+#footer {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: fixed; bottom: 0;
+	background-color: #41b90d;
+	vertical-align: middle;
+	padding: 0 1%;
+}
+
+/* ----- IDs ----- */
+
+#energy {
+	width: 100%;	
+}
+
+#chart {
+	width: 100%;
+	height: 100%;
+	margin-top: 1px;
+	margin-bottom: -4px;
+}
+
+/* ----- Klassen ----- */
+
+.box {
+	width: 100%;
+	height: 100%;
+	min-height: 300px;
+	background-color: #d7f185;
+	border: 1px solid #000;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 1px;
+	margin-bottom: 3%;
+}
+
+.box .caption {
+	background-color: #41b90d;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 2px 5px;
+	margin: 0;
+	border-bottom: 1px solid #000;
+}
+
+.box .content {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.value {
+	text-align: right;
+}
+
+.grandparent text {
+	font-weight: bold;
+}
+
+.grandparent rect {
+	fill: #999;
+}
+
+.grandparent:hover rect {
+	fill: #bbb;
+}
+
+.children rect.parent,
+.grandparent rect,
+rect.child {
+	cursor: pointer;
+}
+
+.children rect.parent,
+.children rect.child {
+	fill-opacity: 0.5;
+}
+
+.children:hover rect.parent,
+.children:hover rect.child {
+  	fill-opacity: 0.75;
+}
+
+rect.parent,
+.grandparent rect {
+	stroke-width: 2px;
+}
+
+/* ----- Tags ----- */
+
+h1 {
+	font-size: 1.3em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+text {
+  pointer-events: none;
+  font-size: 0.75em;
+}
+
+rect {
+  fill: none;
+  stroke: #000;
+}
