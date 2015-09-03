@@ -4,31 +4,37 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>SmartHome</title>
-    <script src="js/energy.js" type="text/javascript"></script>
     <script src="js/d3.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/energy_treemap.js"></script>
-    <script src="js/jquery-min.js"></script>
-
 </head>
 
 <body>
     <div id="wrapper">
-    	<div id="header">
-        	Herzlich Willkommen in Ihrer Energiezentrale!
+        <div id="header">
+            Herzlich Willkommen in Ihrer Energiezentrale!
         </div>
-	<div class="container row col-md-9 contentLeft}">
-		<div id="box_treemap" class="box">
-				<p class="caption">
-					Treemap
-				</p>
-			<div class="content">
-				<p id="chart">
-				</p>
-			</div>
-		</div>
-    	</div>
+        <div id="topmenu">
+        	<ul>
+            	<li class="active">Übersicht</li>
+                <li><a href="settings.html">Einstellungen</a></li>
+                <li><a href="#">Abmelden</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="box_treemap" class="box">
+                <p class="caption">
+                    Treemap
+                </p>
+                <div class="content">
+                    <p id="chart">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            &copy; 2015 <span style="color: #c2eb47">Gre</span>en<span style="color: #f9de44">ergy</span>
+        </div>
     </div>
 </body>
 
+<script type="text/javascript" src="js/energy_treemap.js">	</script>
 </html>
