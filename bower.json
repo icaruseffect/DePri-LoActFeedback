@@ -1,0 +1,17 @@
+{
+  "name": "Felix",
+  "version": "0.0.1",
+  "authors": [
+    "me@johndoe.com"
+  ],
+  "description": "Bower Dependencies for Energiemonitor",
+  "main": "ls",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
