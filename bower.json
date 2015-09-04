@@ -1,6 +1,6 @@
 {
-  "name": "Felix",
-  "version": "0.0.1",
+  "name": "JohnDoe",
+  "version": "0.0.2",
   "authors": [
     "me@johndoe.com"
   ],
@@ -13,5 +13,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.13.3",
+    "bootstrap": "~3.3.5",
+    "d3": "~3.5.6",
+    "jstree": "~3.2.1"
+  }
 }
