@@ -1,13 +1,12 @@
-showEnergyConsumption();
-
 // Höhe der Kopfzeile, also der Position innerhalb der Treemap/des Baumes.
-var titlebarHeight = 20,
+var titlebarHeight = 20;
 // Weite der Treemap, dazu Weite des Elternelements abfragen und jeweils 1 px rechts und links wegen Paddings abziehen plus je 1 px für den Rand.
-  width = document.getElementById("box_treemap").offsetWidth - 4,
+var width = document.getElementById("box_treemap").offsetWidth - 4;
 // Genau wie Weite
-  height = document.getElementById("box_treemap").offsetHeight - titlebarHeight,
-  formatNumber = d3.format(",d"),
-  transitioning;
+var height = document.getElementById("box_treemap").offsetHeight - titlebarHeight - 31;
+
+var formatNumber = d3.format(",d");
+  var transitioning;
 
 var x = d3.scale.linear()
   .domain([0, width])
@@ -63,7 +62,7 @@ d3.json("js/data.json", function(root) {
   // Aggregate the values for internal nodes. This is normally done by the
   // treemap layout, but not here because of our custom implementation.
   // We also take a snapshot of the original children (_children) to avoid
-  // the children being overwritten when when layout is computed.
+  // the children being overwritten when the layout is computed.
   function accumulate(d) {
     return (d._children = d.children) ? d.value = d.children.reduce(function(p, v) {
       return p + accumulate(v);
@@ -124,6 +123,7 @@ d3.json("js/data.json", function(root) {
       })
       .enter().append("rect")
       .attr("class", "child")
+      // Diese Funktion füllt die Kindelemente in der entsprechenden Farbe aus.
       .attr("style", function(d) {
         //var rgb = GetRectColor(d);
         //return "fill: rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
@@ -194,6 +194,7 @@ d3.json("js/data.json", function(root) {
         transitioning = false;
       });
     }
+
     return g;
   }
 
@@ -227,23 +228,41 @@ d3.json("js/data.json", function(root) {
   // übergeordneten Knoten hat, mit diesem rekursiv aufgerufen. Sollte es sich um einen Raum handeln, der Personen beinhaltet, so werden
   // diese hinter dem Raumnamen in Klammern ausgegeben.
   function name(d) {
-    //alert(GetPercentageOfTotal(d._children));
-    return d.parent	? name(d.parent) + " -> " + d.name + (d.persons ? " (" + d.persons + ")" : "") : d.name;
-    //return d.parent ? name(d.parent) + " -> " + d.name + " (" + GetPersons(d) + ")" : d.name;
+    return d.parent ? name(d.parent) + " -> " + d.name + " (" + GetPersons(d) + ")" : d.name + " (" + GetPersons(d) + ")";
   }
 
   // Ermittelt die Anzahl der Personen eines Knotens durch die Anzahl der Personen der untergeordneten Knoten. Sollten einige Knoten keine
   // Personen 'besitzen', weil sie Gegenstände sind (Licht, Kaffeemaschine, ...), wird dafür 0 angenommen.
   function GetPersons(d) {
-    // ausstehend...
+    var persons = 0;
+
+    if (d._children) {
+      for (var i = 0; i < d._children.length; i++) {
+        persons += GetPersons(d._children[i]);
+      }
+    }
+    if (d.persons) {
+      persons += d.persons;
+    }
+    return persons;
+  }
+
+  function GetConsumption(d) {
+    var consumption = 0;
+
+    if (d._children) {
+      for (var i = 0; i < d._children.length; i++) {
+        consumption += GetPersons(d._children[i]);
+      }
+    }
+    if (d.value) {
+      consumption += d.value;
+    }
+    return consumption;
   }
 
   function GetPersonCoefficient(persons) {
     return 1 / persons;
-  }
-
-  function GetAverageConsumption(d) {
-    // ausstehend...
   }
 
   function GetRectColor(d) {
@@ -257,20 +276,20 @@ d3.json("js/data.json", function(root) {
 
     if (d.value < avgValue) {
       // Grüner Farbbereich liegt zwischen (0, 0, 0) und (0, 255, 0). Anpassung der R-Komponente (aufsteigend) schafft Verlauf zwischen grün und gelb.
-      red = 255 * (d.value / avgValue);
+      red = 255 * math.abs((d.value / avgValue));
       green = 255;
     }
     else if (d.value > avgValue) {
       // Roter Farbbereich liegt zwischen (0, 0, 0) und (255, 0, 0). Anpassung der G-Komponente (absteigend) schafft Verlauf zwischen gelb und rot.
       red = 255;
-      green = 255 * (d.value / avgValue - 1);
+      green = 255 * math.abs((d.value / avgValue - 1));
     }
     else {
       red = 255;
       green = 255;
     }
 
-    return [red, green, 0];
+    return "fill: rgb(" + red + ", " + green + ", 0)";
   }
 
   // Berechnet den anteiligen Verbauch eines Gerätes im Verhältnis zum gesamten Raum.
