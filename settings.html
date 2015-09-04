@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/treeview.css" />
     <title>SmartHome</title>
-    <script src="js/d3.min.js" type="text/javascript"></script>
-    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/jstree.min.js" type="text/javascript"></script>
+    <script src="bower_components/d3/d3.min.js" type="text/javascript"></script>
+    <script src="bower_components/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="bower_components/jstree//dist/jstree.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
 
 <script type="text/javascript">
 	var z = 0;
-	
+
 	function build(d, x, y) {
 		var html = "";
 		html += '<ul>';
@@ -77,12 +77,12 @@
 		html += '</li></ul>';
 		return html;
 	}
-	
+
 	d3.json("js/data.json", function (d) {
 		document.getElementById("treeview").innerHTML = build(d, 0, 0);
 		//alert(build(d, 0, 0));
 	});
-	
+
 	$(function () {
 		$("#treeview").jstree({
 			"core" : {
@@ -92,8 +92,8 @@
 			},
 			"types" : {
 				"#" : {
-				  "max_children" : 1, 
-				  "max_depth" : 4, 
+				  "max_children" : 1,
+				  "max_depth" : 4,
 				  "valid_children" : ["root"]
 				},
 				"root" : {
