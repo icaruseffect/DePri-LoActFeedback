@@ -2,15 +2,23 @@
 // aktiviert den Flow-Linter
 
 // Definiere ( App-Name, [ Abhängigkeiten])
-var app = angular.module('app', ['dataService', 'EnergyTreemap']);
+var app = angular.module('app', ['webdataService','dataService','EnergyTreemap']);
 
 /* Initialisierung Controller mit $scope und dataService
  der Rückgabewert von dataService wird im Scope gespeichert */
-app.controller('MainCtrl', function ($scope, dataService) {
+app.controller('MainCtrl', function ($scope, dataService, webdataService) {
 
   // This function gets the Data from the local json file
   $scope.updateData = function () {
     dataService.getData(function (data) {
+      $scope.data = data;
+      //$scope.children = data.children;
+      //Debug Ausgabe auf Konsole
+      console.log("Daten aktualisiert");
+    });
+  };
+  $scope.webupdateData = function () {
+    webdataService.getData(function (data) {
       $scope.data = data;
       //$scope.children = data.children;
       //Debug Ausgabe auf Konsole
@@ -37,6 +45,16 @@ dataService.factory('dataService', function ($resource) {
   });
 });
 
+var webdataService = angular.module('webdataService', ['ngResource']);
+
+webdataService.factory('webdataService', function ($resource) {
+  return $resource('http://176.198.133.123\\:8080/WebServiceClient/sampleHomeBereichProxy/Result.jsp?method=16', {}, {
+    getData: {
+      method: 'GET',
+      isArray: false
+    }
+  });
+});
 
 /*
   Directives
