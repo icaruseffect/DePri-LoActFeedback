@@ -14,7 +14,7 @@ app.controller('MainCtrl', function ($scope, dataService, webdataService) {
   $scope.updateData = function () {
     dataService.getData(function (data) {
       $scope.data.history = $scope.data;
-      $scope.data = data;
+      $scope.data.now = data;
       console.log("Daten aktualisiert");
       console.log($scope);
     });
