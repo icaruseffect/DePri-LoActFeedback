@@ -3,9 +3,8 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-gulp.task('default', function () {
-  //some default task function
-});
+gulp.task('default', ['bower', 'serve']);
+
 
 gulp.task('serve', function () {
   browserSync({
@@ -14,7 +13,7 @@ gulp.task('serve', function () {
     }
   });
 
-  gulp.watch(['*.html', 'styles/**/*.css', 'scripts/**/*.js'], {
+  gulp.watch(['*.html', 'css/**/*.css', 'js/**/*.js'], {
     cwd: 'app'
   }, reload);
 });
