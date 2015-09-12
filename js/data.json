@@ -1,0 +1,75 @@
+{
+	"name": "Haus",
+	"children":
+	[
+		{
+			"name": "Obergeschoss",
+			"children":
+			[
+				{"name": "Schlafzimmer", "value": 5069},
+				{"name": "Badezimmer", "value": 2104}
+			]
+		},
+		{
+			"name": "Erdgeschoss",
+			"children":
+			[
+				{
+					"name": "Diele",
+					"children":
+					[
+						{"name": "Licht", "value": 4571}
+					]
+				},
+				{
+					"name": "Küche",
+					"children":
+					[
+						{"name": "Licht", "value": 17010},
+						{"name": "Mikrowelle", "value": 5842},
+						{"name": "Herd", "value": 3214},
+						{"name": "Backofen", "value": 1041},
+						{"name": "Kühlschrank", "value": 5176},
+						{"name": "Kaffeemaschine", "value": 449}
+					],
+					"persons": 1
+				},
+				{
+					"name": "Badezimmer",
+					"children":
+					[
+						{
+							"name": "Licht",
+							"children":
+							[
+								{"name": "Alibert", "value": 721},
+								{"name": "Decke", "value": 4294}
+							]
+						},
+						{"name": "Radio", "value": 1759}
+					],
+					"persons": 1
+				},
+				{
+					"name": "Wohnzimmer",
+					"children":
+					[
+						{"name": "Fernseher", "value": 8833},
+						{"name": "DVD-Spieler", "value": 1732},
+						{"name": "PlayStation 3", "value": 3623},
+						{
+							"name": "Licht",
+							"children":
+							[
+								{"name": "Stehlampe", "value": 5498},
+								{"name": "Deckenbeleuchtung", "value": 7842},
+								{"name": "Wandbeleuchtung", "value": 6874}
+							]
+						}
+					],
+					"persons": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1.0em;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* ----- divs ----- */
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background-color: #c2eb47;
+	background-image: url(../image/left.png), url(../image/right.png);
+	background-position: top left, top right;
+	background-repeat: no-repeat, no-repeat;
+}
+
+#topmenu {
+  	background: #f9de44;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+
+#topmenu ul {
+	margin: 0 250px;
+	padding: 0 1%;
+}
+
+#topmenu ul li {
+	display: inline;
+	padding: 0 3px;
+	border: 1px solid #000;
+}
+
+#topmenu a {
+	text-decoration: none;
+	color: black;
+}
+
+#topmenu ul li:hover, #topmenu ul li.active {
+	background: #000;
+}
+
+#topmenu ul li:hover a, #topmenu ul li.active {
+	color: #f9de44;
+}
+
+#header {
+	width: auto;
+	height: 100px;
+	line-height: 100px;
+	background-color: #41b90d;
+	font-size: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#content {
+	width: auto;
+	height: calc(98% - 133px - 30px);
+	min-height: calc(98% - 133px - 30px);
+	margin: 0 250px;
+	padding: 1%;
+	overflow: auto;
+}
+
+#footer {
+	width: 98%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #41b90d;
+	vertical-align: middle;
+	padding: 0 1%;
+	position: absolute;	bottom: 0; left: 0;
+}

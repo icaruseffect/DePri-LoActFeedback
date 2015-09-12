@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/treeview.css" />
+    <title>SmartHome</title>
+    <script src="bower_components/d3/d3.min.js" type="text/javascript"></script>
+    <script src="bower_components/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="bower_components/jstree//dist/jstree.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            Herzlich Willkommen in Ihrer Energiezentrale!
+        </div>
+        <div id="topmenu">
+        	<ul>
+            	<li><a href="index.html">Übersicht</a></li>
+                <li class="active">Einstellungen</li>
+                <li><a href="#">Abmelden</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="box_treeview" class="box">
+                <p class="caption">
+                    Dein Haus
+                </p>
+                <div class="content">
+                    <div id="treeview">
+                    </div>
+                </div>
+            </div>
+            <div id="box_password" class="box">
+            	<p class="caption">
+                	Passwort ändern
+                </p>
+                <div class="content">
+                	Um Ihr Passwort zu ändern, geben Sie bitte das aktuelle Passwort ein und anschließend das neue, welches Sie aus Sicherheitsgründen einmal bestätigen.<br />
+                    <br />
+                    <table>
+                    	<tr>
+                        	<td>Aktuelles Passwort:</td>
+                            <td><input type="text" /></td>
+                        </tr>
+                       	<tr>
+                        	<td>Neues Passwort:</td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                        	<td>Neues Passwort bestätigen:</td>
+                            <td><input type="text" /></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <div id="footer">
+            &copy; 2015 <span style="color: #c2eb47">Gre</span>en<span style="color: #f9de44">ergy</span>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+	var z = 0;
+
+	function build(d, x, y) {
+		var html = "";
+		html += '<ul>';
+		html += '<li id="' + x + '.' + y + '">' + d.name;
+		if (d.children) {
+			for (var i = 0; i < d.children.length; i++) {
+				html += build(d.children[i], ++x, z++);
+				x--;
+			}
+		}
+		html += '</li></ul>';
+		return html;
+	}
+
+	d3.json("js/data.json", function (d) {
+		document.getElementById("treeview").innerHTML = build(d, 0, 0);
+		//alert(build(d, 0, 0));
+	});
+
+	$(function () {
+		$("#treeview").jstree({
+			"core" : {
+				"animation" : 1,
+				"check_callback" : true,
+				"themes" : { "stripes" : true },
+			},
+			"types" : {
+				"#" : {
+				  "max_children" : 1,
+				  "max_depth" : 4,
+				  "valid_children" : ["root"]
+				},
+				"root" : {
+				  "valid_children" : ["default"]
+				},
+				"default" : {
+				  "valid_children" : ["default","file"]
+				},
+				"file" : {
+				  "icon" : "glyphicon glyphicon-file",
+				  "valid_children" : []
+				}
+			},
+			"plugins" : [
+				"contextmenu", "dnd", "search",
+				"state", "types", "wholerow"
+			]
+		});
+	});
+</script>
+</html>
