@@ -60,12 +60,14 @@
       <div class="col-md-10">
 
         <div class="panel panel-default">
+
           <div class="panel-heading">
             <h3 class="panel-title">
               Rohdaten:
-              <button class="btn btn-default" ng-click="updateData()">Daten aktualisieren</button>
-              <button class="btn btn-default" ng-click="webupdateData()">Daten vom Sever aktualisieren</button>
             </h3>
+            <button class="btn btn-default" ng-click="updateData()">Daten aktualisieren</button>
+            <button class="btn btn-default" ng-click="webupdateData()">Daten vom Sever aktualisieren</button>
+
           </div>
           <div class="panel-body">
 
@@ -74,9 +76,7 @@
             </div>
 
             <div class="jumbotron">
-
-              <collection collection='data.history'> </collection>
-
+              <collection collection="data.history"> </collection>
             </div>
 
           </div>

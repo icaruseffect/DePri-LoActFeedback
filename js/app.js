@@ -1,5 +1,7 @@
-/* @flow */
-// aktiviert den Flow-Linter
+'use strict';
+/* jshint -W109 */
+// aktiviert Linter
+
 // Definiere ( App-Name, [ Abhängigkeiten])
 var app = angular.module('app', ['webdataService', 'dataService']);
 
@@ -16,12 +18,12 @@ app.controller('MainCtrl', function ($scope, dataService, webdataService) {
       $scope.data.history = $scope.data;
       $scope.data.now = data;
       console.log("Daten aktualisiert");
-      console.log($scope);
     });
   };
   $scope.webupdateData = function () {
     webdataService.getData(function (data) {
-      $scope.data = data;
+      $scope.data.history = $scope.data;
+      $scope.data.now = data;
       //Debug Ausgabe auf Konsole
       console.log("Daten aktualisiert");
     });
@@ -32,6 +34,7 @@ app.controller('MainCtrl', function ($scope, dataService, webdataService) {
 /*
   Services
 */
+
 // Data Service holt die Daten aus der json in js/ und gibt diese an den Aufrufe zurück
 // Definiere ( App-Name, [ Abhängigkeiten])
 var dataService = angular.module('dataService', ['ngResource']);
