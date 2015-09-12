@@ -29,11 +29,11 @@ gulp.task('bower', function () {
 
 var ghPages = require('gulp-gh-pages');
 var ghPagesOptions = {
-	origin: "upstream"
+	remoteUrl: "https://github.com/icaruseffect/DePri-LoActFeedback.git"
 }
 
 
-gulp.task('deploy', function() {
-  return gulp.src('./app/**/*')
+gulp.task('deploy', ['bower'], function() {
+  return gulp.src('./app/**/*.*')
     .pipe(ghPages(ghPagesOptions));
 });
