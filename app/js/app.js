@@ -1,31 +1,31 @@
 /* @flow */
 // aktiviert den Flow-Linter
-
 // Definiere ( App-Name, [ Abhängigkeiten])
-var app = angular.module('app', ['webdataService','dataService','EnergyTreemap']);
+var app = angular.module('app', ['webdataService', 'dataService']);
 
 /* Initialisierung Controller mit $scope und dataService
  der Rückgabewert von dataService wird im Scope gespeichert */
 app.controller('MainCtrl', function ($scope, dataService, webdataService) {
+  // Declare initial Variables
+  $scope.data = {};
+  $scope.data.history = {};
 
   // This function gets the Data from the local json file
   $scope.updateData = function () {
     dataService.getData(function (data) {
+      $scope.data.history = $scope.data;
       $scope.data = data;
-      //$scope.children = data.children;
-      //Debug Ausgabe auf Konsole
       console.log("Daten aktualisiert");
+      console.log($scope);
     });
   };
   $scope.webupdateData = function () {
     webdataService.getData(function (data) {
       $scope.data = data;
-      //$scope.children = data.children;
       //Debug Ausgabe auf Konsole
       console.log("Daten aktualisiert");
     });
   };
-
 });
 
 
@@ -59,47 +59,31 @@ webdataService.factory('webdataService', function ($resource) {
 /*
   Directives
 */
-var chart = angular.module('EnergyTreemap', [])
-  // D3 Factory
-chart.factory('d3', function () {
-  /* We could declare locals or other D3.js
-  specific configurations here. */
-  return d3;
+
+app.directive('collection', function () {
+  return {
+    restrict: "E",
+    replace: true,
+    scope: {
+      collection: '='
+    },
+    template: "<ul><member ng-repeat='member in collection' member='member'></member></ul>"
+  };
 });
-chart.directive('zoomD3Treemap', ["d3",
-  function (d3) {
-    function draw(svg, width, height, data) {
-      svg
-        .attr('width', width)
-        .attr('height', height);
-      // code continues here
-    }
 
-
-
-    return {
-      restrict: 'E',
-      scope: {
-        data: '='
-      },
-      compile: function (element, attrs, transclude) {
-        // Create a SVG root element
-        var svg = d3.select(element[0]).append('svg');
-        svg.append('g').attr('class', 'data');
-        svg.append('g').attr('class', 'x-axis axis');
-        svg.append('g').attr('class', 'y-axis axis');
-        // Define the dimensions for the chart
-        var width = 600,
-          height = 300;
-        // Return the link function
-        return function (scope, element, attrs) {
-          // Watch the data attribute of the scope
-          scope.$watch('data', function (newVal, oldVal, scope) {
-            // Update the chart
-            draw(svg, width, height, scope.data);
-          }, true);
-        };
+app.directive('member', function ($compile) {
+  return {
+    restrict: "E",
+    replace: true,
+    scope: {
+      member: '='
+    },
+    template: "<li>{{member.name}}</li>",
+    link: function (scope, element, attrs) {
+      if (angular.isArray(scope.member.children)) {
+        element.append("<collection collection='member.children'></collection>");
+        $compile(element.contents())(scope);
       }
-    };
-  }
-]);
+    }
+  };
+});

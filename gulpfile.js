@@ -24,12 +24,13 @@ var bower = require('gulp-bower');
 
 gulp.task('bower', function () {
   return bower()
-    .pipe(gulp.dest('app/bower_components'))
+    .pipe(gulp.dest('app/components'));
 });
 
 var ghPages = require('gulp-gh-pages');
 var ghPagesOptions = {
-	branch: ""
+	branch: "",
+	origin: "upstream"
 }
 
 
