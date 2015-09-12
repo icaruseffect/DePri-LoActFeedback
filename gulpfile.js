@@ -35,5 +35,5 @@ var ghPagesOptions = {
 
 gulp.task('deploy', function() {
   return gulp.src('./app/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages(ghPagesOptions));
 });
