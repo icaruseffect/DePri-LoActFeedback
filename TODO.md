@@ -13,4 +13,6 @@
 ## Buildsystem
 
 - [ ] automatisches Code-beautifying
+- [ ] linter
 - [ ] Bootstrap -> less
+- [ ] minify für finale Seite
