@@ -29,7 +29,6 @@ gulp.task('bower', function () {
 
 var ghPages = require('gulp-gh-pages');
 var ghPagesOptions = {
-	branch: "",
 	origin: "upstream"
 }
 
