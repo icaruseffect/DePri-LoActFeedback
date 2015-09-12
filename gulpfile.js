@@ -1,10 +1,11 @@
 var gulp = require('gulp');
 
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-
+// Default task when Gulp is started without specific task
 gulp.task('default', ['bower', 'serve']);
 
+// Task for serving the website for the browser with auto-update
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 gulp.task('serve', function () {
   browserSync({
@@ -18,7 +19,7 @@ gulp.task('serve', function () {
   }, reload);
 });
 
-var gulp = require('gulp');
+// Task for getting dependencies with bower
 var bower = require('gulp-bower');
 
 gulp.task('bower', function () {
@@ -26,11 +27,11 @@ gulp.task('bower', function () {
     .pipe(gulp.dest('app/components'));
 });
 
+// Task for pushing changes to gh-pages
 var ghPages = require('gulp-gh-pages');
 var ghPagesOptions = {
 	remoteUrl: "https://github.com/icaruseffect/DePri-LoActFeedback.git"
-}
-
+};
 
 gulp.task('deploy', ['bower'], function() {
   return gulp.src('./app/**/*.*')
