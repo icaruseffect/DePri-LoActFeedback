@@ -3,7 +3,7 @@
 // aktiviert Linter
 
 // Definiere ( App-Name, [ Abhängigkeiten])
-var app = angular.module('app', ['webdataService', 'dataService']);
+var app = angular.module('app', ['webdataService', 'dataService', 'zoomTreemap']);
 
 /* Initialisierung Controller mit $scope und dataService
  der Rückgabewert von dataService wird im Scope gespeichert */

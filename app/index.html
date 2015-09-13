@@ -17,6 +17,7 @@
   <!-- include project related dependencies -->
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
+  <script src="js/chart.js"></script>
 
 </head>
 
@@ -52,8 +53,8 @@
         <h2 class="jumbotron">Übersicht Energieverbrauch</h2>
 
         <div class="thumbnail">
-          <!--zoom-d3-treemap width="850" height="850" data="$scope.data">
-          </zoom-d3-treemap-->
+          <zoom-treemap-element data="$scope.data.history">
+          </zoom-treemap-element>
 
         </div>
       </div>
