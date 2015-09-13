@@ -19,9 +19,9 @@
   "strict": true,
   "trailing": true,
   "smarttabs": true,
-  "W109" : false, 
-  "globals": {
+  "globals":
+  {
     "angular": false,
-    "d3" : false
+    "d3": false
   }
 }
