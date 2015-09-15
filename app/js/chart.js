@@ -398,7 +398,7 @@ treemap.directive('zoomTreemapElement', ['d3',
 
         // Define the dimensions for the chart
         var width = 600,
-          height = 300;
+          height = 600;
 
 
         // Return the link function
