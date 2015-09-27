@@ -72,9 +72,11 @@ treemap.directive('zoomTreemapElement', ['d3',
       {
         // Create a SVG root element
         var svg = d3.select(element[0]).append('svg');
+        console.log(attrs);
 
         // Define the dimensions for the chart when not definde
         if (width == undefined){
+          console.log('Weite nicht definiert');
           var width = 800;
         }
         if (height == undefined){
