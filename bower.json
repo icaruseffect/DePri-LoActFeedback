@@ -18,6 +18,11 @@
     "angular": null,
     "angular-resource": null,
     "bootstrap": null,
-    "d3": null
+    "d3": null,
+    "angular-route": "~1.4.6"
+  },
+  "devDependencies": {
+    "angular-nvd3": "~1.0.2",
+    "nvd3": "~1.8.1"
   }
 }

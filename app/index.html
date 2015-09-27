@@ -8,22 +8,24 @@
   <!-- Include Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/treemap.css" />
   <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="components/nvd3/build/nv.d3.css">
 
   <!-- include external dependencies -->
   <script src="components/d3/d3.min.js" type="text/javascript"></script>
   <script src="components/angular/angular.js" charset="UTF-8"></script>
   <script src="components/angular-resource/angular-resource.js" charset="UTF-8"></script>
+  <script src="components/nvd3/build/nv.d3.js"></script>
+  <script src="components/angular-nvd3/dist/angular-nvd3.js"></script>
 
   <!-- include project related dependencies -->
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
+  <script src="js/classes.js"></script>
   <script src="js/chart.js"></script>
 
 </head>
 
-<body ng-app="app" ng-controller="MainCtrl">
+<body ng-app="zoomTreemap" ng-controller="ChartCtrl">
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR >
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -45,47 +47,38 @@
       </div>
     </div>
   </nav>
+  < NAVBAR Ende -->
 
   <!-- Haupt-Container-->
   <div class="container">
     <div class="row">
-      <div class="col-md-10">
+      <!-- Sidebar -->
+      <div class="col-md-1">
+        <button type="button" class="btn btn-default navbar-btn"> Update </button>
+      </div>
+      <!-- Sidebar  Ende-->
+
+      <div class="col-md-11">
         <h2 class="jumbotron">Übersicht Energieverbrauch</h2>
 
         <div class="thumbnail">
-          <zoom-treemap-element data="$scope.data.history">
+          <zoom-treemap-element data="data.rawdata" width="600" height="400">
           </zoom-treemap-element>
-
         </div>
-      </div>
 
-      <div class="col-md-10">
-
-        <div class="panel panel-default">
-
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              Rohdaten:
-            </h3>
-            <button class="btn btn-default" ng-click="updateData()">Daten aktualisieren</button>
-            <button class="btn btn-default" ng-click="webupdateData()">Daten vom Sever aktualisieren</button>
-
-          </div>
-          <div class="panel-body">
-
-            <div class="jumbotron">
-              {{data.now}}
-            </div>
-
-            <div class="jumbotron">
-              <collection collection="data.history"> </collection>
-            </div>
-
-          </div>
-
+        <div class="thumbnail">
+          <zoom-treemap-element data="data.rawdata" width="200" height="200">
+          </zoom-treemap-element>
         </div>
 
       </div>
+
+      <div class="col-md-11">
+        <div class="thumbnail">
+          <p> {{data.rawdata}} </p>
+        </div>
+      </div>
+
     </div>
 
   </div>

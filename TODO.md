@@ -2,13 +2,16 @@
 
 ## App.js
 
-- [ ] Chart Direktive einfügen
+- [x] Chart Direktive einfügen
 - [ ] App.js aufteilen
+- [ ] Routing für About/ Chart
+- [ ] Chart Klassen abstraktion
+- [ ] D3js input loader
 
 ## index.html
 
 - [ ] Routing mit Angular einführen
-- [ ] Desing überarbeiten
+- [ ] Design überarbeiten
 
 ## Buildsystem
 

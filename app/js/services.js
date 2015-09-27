@@ -14,14 +14,3 @@ dataService.factory('dataService', function ($resource) {
     }
   });
 });
-
-var webdataService = angular.module('webdataService', ['ngResource']);
-
-webdataService.factory('webdataService', function ($resource) {
-  return $resource('http://176.198.133.123\\:8080/WebServiceClient/sampleHomeBereichProxy/Result.jsp?method=16', {}, {
-    getData: {
-      method: 'GET',
-      isArray: false
-    }
-  });
-});
