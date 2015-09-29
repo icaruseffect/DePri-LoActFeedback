@@ -63,7 +63,7 @@ treemap.directive('zoomTreemapElement', ['d3',
       */
       {
         var house = new House();
-        house.initialize(data);
+        house.initialize(data , null);
         var chart =  new Treemap(svg, house, width, height);
         console.log(d3.selectAll(".child").data()[1].getFullName());
       };
