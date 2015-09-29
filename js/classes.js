@@ -385,7 +385,7 @@ function Treemap (container, data, width, height) {
 			d.parent = d.getParent();
 			d.children = d.getChildren();
 			d._children = d.children;
-			console.log("Setze die öffentlichen D3-Werte für '" + d.getFullName() + "' wie folgt: d.value: " + d.value + ", d.parent: " + (root.parent == null ? "null" : root.parent.getName()) + ", d.children: " + d.children);
+			console.log("Setze die öffentlichen D3-Werte für '" + d.getFullName() + "' wie folgt: d.value: " + d.value + ", d.parent: " + (d.parent == null ? "null" : d.parent.getName()) + ", d.children: " + d.children);
 			if (d.children) {
 				for (var i = 0; i < d.children.length; i++) {
 					accumulate(d.children[i]);
@@ -471,6 +471,7 @@ function Treemap (container, data, width, height) {
 				var g2 = display(d),
 				t1 = g1.transition().duration(750),
 				t2 = g2.transition().duration(750);
+
 
 				// Update the domain only after entering new elements.
 				x.domain([d.x, d.x + d.dx]);
