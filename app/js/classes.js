@@ -314,7 +314,7 @@ function Consumer (__name, __parent, __consumption) {
 	}
 }
 
-function Treemap (container, data, width, height) {
+function Treemap (svg, data, width, height) {
 	// Höhe der Kopfzeile, also der Position innerhalb der Treemap/des Baumes.
 	var titlebarHeight = 20;
 
@@ -339,9 +339,7 @@ function Treemap (container, data, width, height) {
 		.ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
 		.round(false);
 
-	var svg = container;
-		container
-		.attr("width", width)
+	svg.attr("width", width)
 		.attr("height", height + titlebarHeight)
 	  	.append("g")
 		.attr("transform", "translate(" + 0 + "," + titlebarHeight + ")")
