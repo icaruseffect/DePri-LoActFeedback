@@ -317,6 +317,12 @@ function Consumer (__name, __parent, __consumption) {
 function Treemap (svg, data, width, height) {
 	// Höhe der Kopfzeile, also der Position innerhalb der Treemap/des Baumes.
 	var titlebarHeight = 20;
+	// Methode zur Abfrage der Tiefe des Elternknotens.
+	var depth = 0;
+	
+	this.getDepth = function () {
+		return depth;
+	}
 
 	var formatNumber = d3.format(",d");
     var transitioning;
@@ -340,7 +346,7 @@ function Treemap (svg, data, width, height) {
 		.round(false);
 
 	svg.attr("width", width)
-		.attr("height", height + titlebarHeight)
+		.attr("height", height)
 	  	.append("g")
 		.attr("transform", "translate(" + 0 + "," + titlebarHeight + ")")
 		.style("shape-rendering", "crispEdges");
@@ -460,6 +466,8 @@ function Treemap (svg, data, width, height) {
 				.call(text);
 
 			function transition(d) {
+				depth = d.depth;
+				alert(depth);
 				if (transitioning || !d) {
 					return;
 				}
