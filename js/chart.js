@@ -40,6 +40,7 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
       //console.log('Daten Geladen, timestamp:' + data[position].timestamp);
       //console.log('Daten Geladen, timestamp:' + data.timestamp)
       //$scope.data.rawdata = data[position];
+      console.log("Update Button gedrückt");
       $scope.data.rawdata = data;
       position += 1;
       $scope.$digest();
@@ -108,7 +109,7 @@ treemap.directive('zoomTreemapElement', ['d3',
             console.log("zoomTreemapElement: Daten Aktualisiert");
             // Update the chart
             if (scope.data !== '')
-            {draw(svg, scope.data, width, height);}
+            {draw(svg, scope.data, scope.width, scope.height);}
           }, true);
         };
       }
