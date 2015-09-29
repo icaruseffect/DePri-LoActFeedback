@@ -28,8 +28,8 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
   var position = 0;
   // Definiere daten
   $scope.data = {
-    src: 'js/collected.json',
-    //src: 'js/data.json',
+    //src: 'js/collected.json',
+    src: 'js/data.json',
     rawdata: ''
   };
 
@@ -37,8 +37,10 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
   {
     new D3JsonLoader($scope.data.src, function (data)
     {
-      console.log('Daten Geladen, timestamp:' + data[position].timestamp);
-      $scope.data.rawdata = data[position];
+      //console.log('Daten Geladen, timestamp:' + data[position].timestamp);
+      //console.log('Daten Geladen, timestamp:' + data.timestamp)
+      //$scope.data.rawdata = data[position];
+      $scope.data.rawdata = data;
       position += 1;
       $scope.$digest();
     });
@@ -62,7 +64,7 @@ treemap.directive('zoomTreemapElement', ['d3',
       {
         var house = new House();
         house.initialize(data);
-        var chart =  Treemap(svg, house, width, height);
+        var chart =  new Treemap(svg, house, width, height);
         console.log(d3.selectAll(".child").data()[1].getFullName());
       };
 
@@ -105,7 +107,8 @@ treemap.directive('zoomTreemapElement', ['d3',
           {
             console.log("zoomTreemapElement: Daten Aktualisiert");
             // Update the chart
-            draw(svg, scope.data, width, height);
+            if (scope.data !== '')
+            {draw(svg, scope.data, width, height);}
           }, true);
         };
       }
