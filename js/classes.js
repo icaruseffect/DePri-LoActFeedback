@@ -368,7 +368,7 @@ function Treemap (svg, data, width, height) {
 
 	function init (root) {
 		initialize(root);
-		accumulate(root);
+		accumulate(root, 0);
 		layout(root);
 		display(root);
 
@@ -377,7 +377,6 @@ function Treemap (svg, data, width, height) {
 			root.y = titlebarHeight;
 			root.dx = width;
 			root.dy = height;
-			root.depth = 0;
 			console.log("Initialisiere Treemap: root.x: " + root.x + ", root.y: " + root.y + ", root.dx: " + root.dx + ", root.dy: " + root.dy + ", root.depth: " + root.depth);
 		}
 
@@ -390,7 +389,7 @@ function Treemap (svg, data, width, height) {
 			d.parent = d.getParent();
 			d.children = d.getChildren();
 			d._children = d.children;
-			d.depth = depth || 0;
+			d.depth = depth;
 			console.log("Setze die öffentlichen D3-Werte für '" + d.getFullName() + "' wie folgt: d.value: " + d.value + ", d.parent: " + (d.parent == null ? "null" : d.parent.getName()) + ", d.children: " + d.children);
 			if (d.children) {
 				depth++;
@@ -408,7 +407,7 @@ function Treemap (svg, data, width, height) {
 		// of sibling was laid out in 1×1, we must rescale to fit using absolute
 		// coordinates. This lets us use a viewport to zoom.
 		function layout(d) {
-			console.log("Layoute Knoten '" + d.getFullName() + "'; Kinder: " + (d._children ? "true" : "false"));
+			console.log("Layoute Knoten '" + d.getFullName());
 			if (d._children) {
 				treemap.nodes({children: d._children});
 				d._children.forEach(function(c) {
@@ -469,7 +468,7 @@ function Treemap (svg, data, width, height) {
 
 			function transition(d) {
 				depth = d.depth;
-				alert(depth);
+				console.log(depth);
 				if (transitioning || !d) {
 					return;
 				}
