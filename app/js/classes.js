@@ -349,13 +349,13 @@ function Treemap (svg, data, width, height) {
 		.attr("class", "grandparent");
 
 	grandparent.append("rect")
-		.attr("y", -titlebarHeight)
+		.attr("y", 0)
 		.attr("width", width)
 		.attr("height", titlebarHeight);
 
 	grandparent.append("text")
 		.attr("x", 6)
-		.attr("y", 6 - titlebarHeight)
+		.attr("y", 6)
 		.attr("dy", ".75em");
 
 	init(data);
@@ -367,7 +367,8 @@ function Treemap (svg, data, width, height) {
 		display(root);
 
 		function initialize(root) {
-			root.x = root.y = 0;
+			root.x = 0;
+			root.y = titlebarHeight;
 			root.dx = width;
 			root.dy = height;
 			root.depth = 0;
@@ -408,7 +409,6 @@ function Treemap (svg, data, width, height) {
 					c.dx *= d.dx;
 					c.dy *= d.dy;
 					c.parent = d;
-					//alert("c.x: " + c.x + ", c.y: " + c.y + ", c.dx: " + c.dx + " , c.dy: " + c.dy);
 					layout(c);
 				});
 			}
@@ -449,7 +449,6 @@ function Treemap (svg, data, width, height) {
 				.call(rect)
 				.append("title")
 				.text(function(d) {
-					//alert (d.getConsumption());
 					return formatNumber(d.value);
 				});
 
