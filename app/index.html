@@ -54,7 +54,7 @@
     <div class="row">
       <!-- Sidebar -->
       <div class="col-md-1">
-        <button type="button" class="btn btn-default navbar-btn"> Update </button>
+        <button type="button" class="btn btn-default navbar-btn" ng-click="update()"> Update </button>
       </div>
       <!-- Sidebar  Ende-->
 
@@ -75,6 +75,7 @@
 
       <div class="col-md-11">
         <div class="thumbnail">
+          <h1> {{data.rawdata.timestamp}} </h1>
           <p> {{data.rawdata}} </p>
         </div>
       </div>

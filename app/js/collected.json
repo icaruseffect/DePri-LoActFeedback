@@ -1,0 +1,1586 @@
+[
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 275.06,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T17:41:55.643250"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 264.4,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T17:54:17.076699"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 264.4,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T17:54:22.521269"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 264.4,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T17:54:34.365165"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 262.27,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T17:58:43.076202"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 260.14,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T17:59:45.741169"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 260.14,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T18:00:50.723467"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 260.14,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 2.22,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T18:00:52.254517"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 258.01,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-26T18:01:06.804433"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-27T13:53:47.624119"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-27T14:16:38.917756"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:14.491412"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:17.850544"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:19.195455"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:20.298566"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:21.770554"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 1,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:23.085372"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:24.199076"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 0,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 0,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 1,
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:25.427421"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Wohnzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "persons": 1,
+                "name": "Kuche"
+            },
+            {
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "persons": 1,
+                "name": "Buro"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "persons": 0,
+                "name": "Schlafzimmer"
+            },
+            {
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "persons": 0,
+                "name": "Badezimmer"
+            }
+        ],
+        "timestamp": "2015-09-29T13:57:26.724671",
+        "name": "Erdgeschoss"
+    },
+    {
+        "children": [
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "name": "Wohnzimmer"
+            },
+            {
+                "persons": 0,
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "name": "Kuche"
+            },
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "name": "Buro"
+            },
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "name": "Schlafzimmer"
+            },
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "name": "Badezimmer"
+            }
+        ],
+        "name": "Erdgeschoss",
+        "timestamp": "2015-09-29T13:57:27.806405"
+    },
+    {
+        "children": [
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 42.76,
+                        "name": "Fernseher"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "name": "Wohnzimmer"
+            },
+            {
+                "persons": 0,
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Wasserkocher"
+                    },
+                    {
+                        "value": 58.2,
+                        "name": "Kuhlschrank"
+                    }
+                ],
+                "name": "Kuche"
+            },
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 2.33,
+                        "name": "Computer"
+                    },
+                    {
+                        "value": 4.34,
+                        "name": "Monitor"
+                    }
+                ],
+                "name": "Buro"
+            },
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Lampe"
+                    }
+                ],
+                "name": "Schlafzimmer"
+            },
+            {
+                "persons": 1,
+                "children": [
+                    {
+                        "value": 0,
+                        "name": "Waschmaschine"
+                    },
+                    {
+                        "value": 0,
+                        "name": "Rasierer"
+                    }
+                ],
+                "name": "Badezimmer"
+            }
+        ],
+        "timestamp": "2015-09-29T13:57:32.159385",
+        "name": "Erdgeschoss"
+    }
+]

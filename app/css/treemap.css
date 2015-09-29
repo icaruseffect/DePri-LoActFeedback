@@ -51,11 +51,11 @@
 }
 
 .grandparent rect {
-	fill: #999;
+	fill: #f99;
 }
 
 .grandparent:hover rect {
-	fill: #bbb;
+	fill: #fbf;
 }
 
 .children rect.parent,
