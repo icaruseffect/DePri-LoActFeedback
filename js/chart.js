@@ -76,7 +76,7 @@ treemap.directive('zoomTreemapElement', ['d3',
       {
         data: '=',
         width: '=',
-        height: '@'
+        height: '='
       },
 
       compile: function (element, attrs, transclude)
