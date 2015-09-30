@@ -20,8 +20,8 @@ html, body {
 	height: 100%;
 	min-height: 100%;
 	background-color: #c2eb47;
-	background-image: url(../image/left.png), url(../image/right.png);
-	background-position: top left, top right;
+	background-image: url('../image/left.png'), url('../image/right.png');
+	background-position: left, right;
 	background-repeat: no-repeat, no-repeat;
 }
 

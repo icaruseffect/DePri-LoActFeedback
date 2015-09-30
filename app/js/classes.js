@@ -325,7 +325,7 @@ function Treemap (svg, data, width, height) {
 	}
 
 	this.update = function (data) {
-		d3.select().text("")
+		d3.select(svg).text("");
 		init( data);
 	}
 

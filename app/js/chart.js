@@ -76,6 +76,7 @@ treemap.directive('zoomTreemapElement', ['d3',
   {
     var chart = '';
     var house = ' ';
+    var fresh = false
 
 
     var draw = function (svg, data, width, height)
@@ -87,7 +88,14 @@ treemap.directive('zoomTreemapElement', ['d3',
         //var house = '';
           house = new House();
           House(house.initialize(data, null));
-          chart = new Treemap(svg, house, width, height);
+          if (fresh != true) {
+            chart = new Treemap(svg, house, width, height);
+            fresh = true;
+          }
+          else {
+            chart.update( house );
+          }
+
 
 
         console.log("tiefe: " + chart.getDepth());
