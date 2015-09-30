@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json, datetime, time, threading
 from urllib.request import urlopen
 '''

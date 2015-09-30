@@ -44,3 +44,11 @@ gulp.task('deploy', ['bower'], function ()
   return gulp.src('./app/**/*.*')
     .pipe(ghPages(ghPagesOptions));
 });
+
+
+var shell = require('gulp-shell')
+gulp.task('generate',  shell.task([
+   'python json_generator.py',
+   'mv randcollection.json app/js/'
+]))
+  
