@@ -25,6 +25,7 @@ treemap.factory('D3JsonLoader', ['d3',
 
 treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3JsonLoader)
 {
+  var house = new House()
   var position = 0;
   // Definiere daten
   $scope.data = {
@@ -40,6 +41,14 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
     $scope.data.now = $scope.data.rawdata[position];
     position += 1;
   };
+
+  $scope.back = function ()
+  {
+    console.log("Next Button gedrückt: Nächsten Wert anzeigen");
+    $scope.data.now = $scope.data.rawdata[position];
+    position -= 1;
+  };
+
 
   $scope.update = function ()
   {
@@ -64,7 +73,9 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
 treemap.directive('zoomTreemapElement', ['d3',
   function (d3)
   {
-    var firstrun = true;
+    var chart = '';
+    var house = ' ';
+
 
     var draw = function (svg, data, width, height)
       /*
@@ -72,19 +83,11 @@ treemap.directive('zoomTreemapElement', ['d3',
       und erzeugt anschließend eine neue Treemap
       */
       {
-        var chart = '';
-        var house = '';
-        if (firstrun === true)
-        {
+        //var house = '';
           house = new House();
-          house.initialize(data, null);
+          House(house.initialize(data, null));
           chart = new Treemap(svg, house, width, height);
-          firstrun = false;
-        }
-        else {
-          house.initialize(data,null);
-          chart.update(data);
-        }
+
 
         console.log("tiefe: " + chart.getDepth());
         //console.log(d3.selectAll(".child").data()[1].getFullName());
@@ -107,12 +110,12 @@ treemap.directive('zoomTreemapElement', ['d3',
         var svg = d3.select(element[0]).append('svg');
 
         // Define the dimensions for the chart when not definde
-        if (width == undefined)
+        if (width === undefined)
         {
           console.log('Angular:Treemap:Directive Weite nicht definiert');
           var width = 800;
         }
-        if (height == undefined)
+        if (height === undefined)
         {
           console.log('Angular:Treemap:Directive Höhe nicht definiert');
           var height = 600;
@@ -132,6 +135,9 @@ treemap.directive('zoomTreemapElement', ['d3',
             if (scope.data !== '')
             {
               draw(svg, scope.data, scope.width, scope.height);
+            }
+            else {
+              console.log("Keine Daten vorhanden");
             }
           }, true);
         };
