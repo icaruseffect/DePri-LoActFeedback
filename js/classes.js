@@ -319,9 +319,13 @@ function Treemap (svg, data, width, height) {
 	var titlebarHeight = 20;
 	// Methode zur Abfrage der Tiefe des Elternknotens.
 	var depth = 0;
-	
+
 	this.getDepth = function () {
 		return depth;
+	}
+
+	this.update = function (data) {
+		return init( data);
 	}
 
 	var formatNumber = d3.format(",d");

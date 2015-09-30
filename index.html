@@ -25,7 +25,7 @@
 
 <body ng-app="zoomTreemap" ng-controller="ChartCtrl">
 
-  <!-- NAVBAR >
+  <!-- NAVBAR -->
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -40,43 +40,46 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active" ><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><button class="navbar-nav" ng-click="update()">Update</button></li>
+          <li><button class="navbar-nav" ng-click="next()">Next</button></li>
         </ul>
       </div>
     </div>
   </nav>
-  < NAVBAR Ende -->
+  <!-- NAVBAR Ende -->
 
   <!-- Haupt-Container-->
   <div class="container">
     <div class="row">
       <!-- Sidebar -->
-      <div class="col-md-1">
+      <!--div class="col-xs-1">
         <button type="button" class="btn btn-default navbar-btn" ng-click="update()"> Update </button>
-      </div>
+      </div-->
       <!-- Sidebar  Ende-->
 
-      <div class="col-md-11">
+      <div class="col-sm-6">
         <h2 class="jumbotron">Übersicht Energieverbrauch</h2>
 
         <div class="thumbnail chart">
-          <zoom-treemap-element data="data.rawdata" width="600" height="400">
+          <h3> Treemap 1 </h3>
+          <zoom-treemap-element data="data.now" width="500" height="400">
           </zoom-treemap-element>
         </div>
 
         <div class="thumbnail">
-          <zoom-treemap-element data="data.rawdata" width="500" height="400">
+          <h3> Treemap 2</h3>
+          <zoom-treemap-element data="data.now" width="500" height="400">
           </zoom-treemap-element>
         </div>
 
       </div>
 
-      <div class="col-md-11">
+      <div class="col-sm-6">
         <div class="thumbnail">
-          <h1> {{data.rawdata.timestamp}} </h1>
-          <p> {{data.rawdata}} </p>
+          <h1> Messung vom {{data.now.timestamp| date:"MM.dd.yyyy 'um' HH:MM"}} </h1>
+          <p> {{data.now}} </p>
         </div>
       </div>
 

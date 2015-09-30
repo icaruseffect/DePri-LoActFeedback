@@ -29,8 +29,16 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
   // Definiere daten
   $scope.data = {
     //src: 'js/collected.json',
-    src: 'js/data.json',
-    rawdata: ''
+    src: 'js/randcollection.json',
+    rawdata: '',
+    now: ''
+  };
+
+  $scope.next = function ()
+  {
+    console.log("Next Button gedrückt: Nächsten Wert anzeigen");
+    $scope.data.now = $scope.data.rawdata[position];
+    position += 1;
   };
 
   $scope.update = function ()
@@ -42,7 +50,6 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
       //$scope.data.rawdata = data[position];
       console.log("Update Button gedrückt");
       $scope.data.rawdata = data;
-      position += 1;
       $scope.$digest();
     });
   };
@@ -57,16 +64,30 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
 treemap.directive('zoomTreemapElement', ['d3',
   function (d3)
   {
+    var firstrun = true;
+
     var draw = function (svg, data, width, height)
       /*
       Diese Funktion nimmt die Daten an, parst diese in ein neues Haus Objekt
       und erzeugt anschließend eine neue Treemap
       */
       {
-        var house = new House();
-        house.initialize(data , null);
-        var chart =  new Treemap(svg, house, width, height);
-        console.log(d3.selectAll(".child").data()[1].getFullName());
+        var chart = '';
+        var house = '';
+        if (firstrun === true)
+        {
+          house = new House();
+          house.initialize(data, null);
+          chart = new Treemap(svg, house, width, height);
+          firstrun = false;
+        }
+        else {
+          house.initialize(data,null);
+          chart.update(data);
+        }
+
+        console.log("tiefe: " + chart.getDepth());
+        //console.log(d3.selectAll(".child").data()[1].getFullName());
       };
 
 
@@ -109,7 +130,9 @@ treemap.directive('zoomTreemapElement', ['d3',
             console.log("zoomTreemapElement: Daten Aktualisiert");
             // Update the chart
             if (scope.data !== '')
-            {draw(svg, scope.data, scope.width, scope.height);}
+            {
+              draw(svg, scope.data, scope.width, scope.height);
+            }
           }, true);
         };
       }
