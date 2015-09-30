@@ -59,6 +59,7 @@ treemap.controller('ChartCtrl', ['$scope', 'D3JsonLoader', function ($scope, D3J
       //$scope.data.rawdata = data[position];
       console.log("Update Button gedrückt");
       $scope.data.rawdata = data;
+      $scope.next();
       $scope.$digest();
     });
   };
