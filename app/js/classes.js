@@ -325,7 +325,8 @@ function Treemap (svg, data, width, height) {
 	}
 
 	this.update = function (data) {
-		return init( data);
+		d3.select().text("")
+		init( data);
 	}
 
 	var formatNumber = d3.format(",d");
