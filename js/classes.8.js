@@ -325,8 +325,8 @@ function Treemap (svg, data, width, height) {
 	}
 
 	this.update = function (data) {
-		d3.select(svg).text("");
-		init( data);
+		svg.text("");
+		init(data);
 	}
 
 	var formatNumber = d3.format(",d");
@@ -355,8 +355,13 @@ function Treemap (svg, data, width, height) {
 	  	.append("g")
 		.attr("transform", "translate(" + 0 + "," + titlebarHeight + ")")
 		.style("shape-rendering", "crispEdges");
-
-	var grandparent = svg.append("g")
+	
+	var grandparent;
+	
+	init(data);
+	
+	function init (root) {
+	grandparent = svg.append("g")
 		.attr("class", "grandparent");
 
 	grandparent.append("rect")
@@ -369,9 +374,6 @@ function Treemap (svg, data, width, height) {
 		.attr("y", 6)
 		.attr("dy", ".75em");
 
-	init(data);
-
-	function init (root) {
 		initialize(root);
 		accumulate(root, 0);
 		layout(root);

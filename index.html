@@ -40,11 +40,17 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active" ><a href="#">Home</a></li>
+          <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><button class="btn btn-default" ng-click="update()">Update</button></li>
-          <li><button class="btn btn-default" ng-click="next()">Next</button></li>
-          <li><button class="btn btn-default" ng-click="back()">Back</button></li>
+          <li>
+            <button class="btn btn-default" ng-click="update()">Update</button>
+          </li>
+          <li>
+            <button class="btn btn-default" ng-click="next()">Next</button>
+          </li>
+          <li>
+            <button class="btn btn-default" ng-click="back()">Back</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -52,52 +58,53 @@
   <!-- NAVBAR Ende -->
 
   <!-- Haupt-Container-->
-  <div class="container">
-    <div class="row">
-      <!-- Sidebar -->
-      <!--div class="col-xs-1">
+  <div class="mainpage">
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar -->
+        <!--div class="col-xs-1">
         <button type="button" class="btn btn-default navbar-btn" ng-click="update()"> Update </button>
       </div-->
-      <!-- Sidebar  Ende-->
+        <!-- Sidebar  Ende-->
 
-      <div class="col-sm-6">
-        <h2 class="jumbotron">Übersicht Energieverbrauch</h2>
+        <div class="col-sm-6">
+          <h2 class="jumbotron">Übersicht Energieverbrauch</h2>
 
-        <div class="thumbnail chart">
-          <h3> Treemap 1 </h3>
-          <zoom-treemap-element data="data.now" width="500" height="400">
-          </zoom-treemap-element>
+          <div class="thumbnail chart">
+            <h3> Treemap 1 </h3>
+            <zoom-treemap-element data="data.now" width="500" height="400">
+            </zoom-treemap-element>
+          </div>
+
+          <div class="thumbnail">
+            <h3> Treemap 2</h3>
+            <zoom-treemap-element data="data.now" width="500" height="400">
+            </zoom-treemap-element>
+          </div>
+
         </div>
 
-        <div class="thumbnail">
-          <h3> Treemap 2</h3>
-          <zoom-treemap-element data="data.now" width="500" height="400">
-          </zoom-treemap-element>
+        <div class="col-sm-6">
+          <h1 class="jumbotron"> Messung vom {{data.now.timestamp| date:"MM.dd.yyyy 'um' HH:MM"}} </h1>
+          <div class="thumbnail">
+
+            <p> {{data.now}} </p>
+          </div>
         </div>
 
-      </div>
-
-      <div class="col-sm-6">
-        <h1 class="jumbotron"> Messung vom {{data.now.timestamp| date:"MM.dd.yyyy 'um' HH:MM"}} </h1>
-        <div class="thumbnail">
-
-          <p> {{data.now}} </p>
-        </div>
       </div>
 
     </div>
 
+    <hr>
+    <footer>
+      <p>&copy; 2015
+        <span style="color: #c2eb47">Gre</span>en
+        <span style="color: #f9de44">ergy</span>
+      </p>
+    </footer>
+
   </div>
-
-  <hr>
-  <footer>
-    <p>&copy; 2015
-      <span style="color: #c2eb47">Gre</span>en
-      <span style="color: #f9de44">ergy</span>
-    </p>
-  </footer>
-
-
 </body>
 
 
