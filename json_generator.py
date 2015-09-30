@@ -13,9 +13,22 @@ def generate (gen_name):
     #print (gen)
     return gen
 
+def rantime():
+     year = 2015
+     month =  random.randint(1,12)
+     day =  random.randint(1,30)
+     hour = random.randint(0,23)
+     minute =  random.randint(0, 59)
+     parsestring =   str(year) + " " + str(month) + " "+  str(day) + " " + str(hour) + " "   + str(minute)
+     parsed = time.strptime( parsestring , "%Y %m %d %H %M")
+     return parsed
+
+
 def concat ():
     house = {"name" : "Haus", "children": [] }
-    house['timestamp'] = ( time.time() )
+    random_structime = time.mktime ( rantime( )  )
+
+    house['timestamp'] = ( time.mktime( rantime() ) )
 
     levels = generate("Etage")
     for level in levels:
